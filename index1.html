@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Category Clothing E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+  
+</style>
+</head>
+
+<body class="bg-gray-100">
+    
+ <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-black-600 ">
+          Rang Riwaj
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-8 text-gray-700">
+          <a href="index1.html" class="hover:text-indigo-600 transition duration-300">Home</a>
+          <a href="shop1.html" class="hover:text-indigo-600 transition duration-300">Shop</a>
+          <a href="aboutus.html" class="hover:text-indigo-600 transition duration-300">About</a>
+          <a href="contact.html" class="hover:text-indigo-600 transition duration-300">Contact</a>
+         
+        </nav>
+
+    <div class="auth-buttons">
+       <a href="login.html" class="ml-4 px-4 py-2 bg-orange-600 text-white rounded hover:bg-blue-700">Login</a>
+       <a href="signup.html" class="ml-4 px-4 py-2 bg-orange-600 text-white rounded hover:bg-blue-700">SignUp</a>
+      
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</header>
+   <header class="relative bg-gray-900 text-white h-screen flex items-center justify-center">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="slider new.webp" alt="Fashion Banner"
+         class="w-full h-full object-cover opacity-60">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-md">Elevate Your Style</h1>
+    <p class="text-lg md:text-2xl text-gray-200 mb-8">Discover our premium clothing collections for every occasion.</p>
+    <a href="shop1.html" class="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition">
+      Shop Now
+    </a>
+  </div>
+</header>
+  <section class="py-12 bg-gray-50">
+  <div class="max-w-6x6 mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-8">Featured Collections</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img  style="height: 320px;" src="b5.jpg" alt="Men" class="rounded-xl w-full h-auto">
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img  style="height: 320px;"  src="b1.jpg" alt="Women" class="rounded-xl w-full h-auto">
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img style="height: 320px;"  src="b4.jpg" alt="Kids" class="rounded-xl w-full h-auto">
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img  style="height: 340px;" src="slider new.webp" alt="New" class="rounded-xl w-full h-auto">
+        </div>
+      </div>
+
+      <!-- Swiper navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Hot Discounts This Season</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Discount Card 1 -->
+      <div class="relative rounded-xl overflow-hidden shadow-lg group">
+        <img src="women 1.webp" alt="Women's Sale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+          <h3 class="text-white text-2xl font-semibold">30% OFF</h3>
+          <p class="text-gray-200 mb-2">On Women's Wear</p>
+          <a href="womencollection.html" class="text-white underline text-sm hover:text-yellow-300">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Discount Card 2 -->
+      <div class="relative rounded-xl overflow-hidden shadow-lg group">
+        <img src="men1.jpg" alt="Men's Sale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+          <h3 class="text-white text-2xl font-semibold">40% OFF</h3>
+          <p class="text-gray-200 mb-2">On Men's Collection</p>
+          <a href="mencollection.html" class="text-white underline text-sm hover:text-yellow-300">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Discount Card 3 -->
+      <div class="relative rounded-xl overflow-hidden shadow-lg group">
+        <img src="kids1.jpg" alt="Kids' Sale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6">
+          <h3 class="text-white text-2xl font-semibold">20% OFF</h3>
+          <p class="text-gray-200 mb-2">On Kids' Clothing</p>
+          <a href="kidscollection.html" class="text-white underline text-sm hover:text-yellow-300">Shop Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- Categories -->
+ <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+       <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Shop By Categorie</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <img  style="height: 290px;" src="m2.jpg" alt="Men" class="mx-auto mb-2 ">
+          <h3 class="text-xl font-semibold mb-2">Men's Wear</h3>
+        <p class="text-gray-500">Casual, formal, ethnic & more.</p>
+         <br>
+         <a href="mencollection.html" class="inline-block bg-black text-white px-4 py-1 rounded-full hover:bg-gray-800 transition">
+        Shop
+      </a>
+      </a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <img style="height: 290px;" src="sec10.webp" alt="Women" class="mx-auto mb-2">
+           <h3 class="text-xl font-semibold mb-2">Women's Wear</h3>
+        <p class="text-gray-500">Casual, formal, ethnic & more.</p>
+         <br>
+         <a href="womencollection.html" class="inline-block bg-black text-white px-4 py-1 rounded-full hover:bg-gray-800 transition">
+        Shop
+      </a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <img  style="height: 290px;" src="kids.jpg" alt="Kids" class="mx-auto mb-2">
+           <h3 class="text-xl font-semibold mb-2">Kids Wear</h3>
+        <p class="text-gray-500">Casual, formal, ethnic & more.</p>
+         <br>
+         <a href="kidscollection.html" class="inline-block bg-black text-white px-4 py-1 rounded-full hover:bg-gray-800 transition">
+        Shop
+      </a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <img  style="height: 290px;" src="accees.jpg" alt="Accessories" class="mx-auto mb-2">
+          <h3 class="text-xl font-semibold mb-2">Accessories</h3>
+        <p class="text-gray-500">Casual, formal, ethnic & more.</p>
+         <br>
+         <a href="accesseries.html" class="inline-block bg-black text-white px-4 py-1 rounded-full hover:bg-gray-800 transition">
+        Shop
+      </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+<section class="relative bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 items-center gap-12">
+    
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">BRIDAL COLLECTION</h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Discover our latest fashion drop – curated styles that blend comfort, trend, and timeless elegance. Perfect for the parties and wedding function.
+      </p>
+      <ul class="space-y-3 text-gray-700 mb-8">
+        <li>✔ Trendy Seasonal Outfits</li>
+        <li>✔ Exclusive Designer Picks</li>
+        <li>✔ High-quality Sustainable Fabrics</li>
+      </ul>
+      <a href="shopthe collection.html" class="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+        Shop the Collection
+      </a>
+    </div>
+
+    <!-- Fashion Image -->
+    <div class="relative">
+      <div class="rounded-3xl overflow-hidden shadow-lg">
+        <img src="br5.jpg" alt="Fashion" class="w-full h-auto object-cover">
+      </div>
+      <div class="absolute top-2 left-2 bg-white text-black px-4 py-2 rounded-xl shadow-md text-sm font-semibold">
+        New Season
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+ <!-- Featured Products -->
+  <section class="py-12 bg-gray-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Feature Product</h2>
+     
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow p-4">
+          <img src="l2.jpg" alt="Product 1" class="w-full h-48 object-cover">
+          <h4 class="mt-2 font-semibold">Stylish Jacket</h4>
+          <p class="text-gray-600">$49.99</p>
+          <br>
+           <a href="jack.html" class="bg-red text-black font-semibold px-5 py-3  bg-red-200 rounded-full hover:bg-gray-200 transition">
+      Shop Now
+    </a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <img src="casual sneaker.jpg" alt="Product 2" class="w-full h-48 object-cover">
+          <h4 class="mt-2 font-semibold">Casual Sneakers</h4>
+          <p class="text-gray-600">$39.99</p>
+           <br>
+           <a href="sneakers.html" class="bg-red text-black font-semibold px-5 py-3 bg-red-200 rounded-full hover:bg-gray-200 transition">
+      Shop Now
+    </a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <img src="leather bag.jpg" alt="Product 3" class="w-full h-48 object-cover">
+          <h4 class="mt-2 font-semibold">Leather Bag</h4>
+          <p class="text-gray-600">$59.99</p>
+           <br>
+           <a href="leather.html" class="bg-red text-black font-semibold px-5 py-3  bg-red-200 rounded-full hover:bg-gray-200 transition">
+      Shop Now
+    </a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4">
+          <img src="kid out.jpg" alt="Product 4" class="w-full h-48 object-cover">
+          <h4 class="mt-2 font-semibold">Kids Outfit</h4>
+          <p class="text-gray-600">$29.99</p>
+           <br>
+           <a href="kidsout.html" class="bg-red text-black font-semibold px-5 py-3  bg-red-200 rounded-full hover:bg-gray-200 transition">
+      Shop Now
+    </a>
+        </div>
+      </div>
+    
+    
+  </div>
+</section>
+<br>
+<!-- About Us Section with Image -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+    <!-- Image -->
+    <div class="md:w-2/2">
+      <img src="s1.webp" alt="About Rang Riwaj" class="w-full rounded-lg shadow-md">
+    </div>
+    <!-- Text Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+      <p class="text-gray-600 text-lg">
+        Welcome to <span class="font-semibold text-gray-800">Rang Riwaj</span> — where style meets simplicity. We are passionate about fashion and committed to bringing you the latest trends in clothing and accessories.
+      </p>
+      <p class="text-gray-600 text-lg mt-4">
+        From everyday essentials to standout pieces, we cater to Men, Women, and Kids with quality, comfort, and affordability in mind. Our mission is to make fashion accessible, enjoyable, and empowering for everyone.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+   <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-about">
+        <h2 class="logo">Rang Riwaj</h2>
+        <p>Your destination for the latest trends and timeless classics.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Collections</a></li>
+          </ul>
+        </div>
+        <div class="link-group">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="link-group">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="auth-buttons">
+       <a href="login.html" class="ml-4 px-4 py-2 bg-orange-600 text-white rounded hover:bg-blue-700">Login</a>
+       <a href="signup.html" class="ml-4 px-4 py-2 bg-orange-600 text-white rounded hover:bg-blue-700">SignUp</a>
+      
+    </div>
+    <div class="footer-bottom">
+      <div class="newsletter">
+        <h4>Join Our Newsletter</h4>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; RangRiwaj. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  
+
+  <script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+<script>
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+</script>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav').classList.toggle('active');
+  }
+
+</script>
+</body>
+
+</html>
